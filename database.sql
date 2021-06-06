@@ -71,8 +71,6 @@ BEFORE UPDATE ON users
 FOR EACH ROW
 EXECUTE PROCEDURE trigger_set_timestamp();
 
-
-
 INSERT INTO categories(name) VALUES ('comida');
 INSERT INTO categories(name) VALUES ('eletrônicos');
 INSERT INTO categories(name) VALUES ('automóveis');
