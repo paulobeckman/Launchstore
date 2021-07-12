@@ -6,7 +6,7 @@ const { formatPrice, date } =require('../../lib/utils')
 
 async function format(order) {
     //detalhes do produto
-    order.product = await LoadProductService.load('product', {
+    order.product = await LoadProductService.load('productWhithDeleted', {
         where: { id: order.product_id}
     })
 
