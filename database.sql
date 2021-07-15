@@ -156,5 +156,5 @@ CREATE VIEW products_without_delete AS
 SELECT * FROM products WHERE deleted_at IS NULL;
 
 --4. Renomear a nossa VIEW e nossa TABLE
-ALTER TABLE products RENAME TO product_with_deleted;
+ALTER TABLE products RENAME TO products_with_deleted;
 ALTER TABLE products_without_delete RENAME TO products;
